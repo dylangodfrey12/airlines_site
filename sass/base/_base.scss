@@ -1,0 +1,20 @@
+
+/* border-box change box model so border and padding isnt added to total height of box*/
+*,
+*::after,
+*::before  {
+    margin: 0;
+    padding: 0;
+    /*makes boxing in body element inheritable for all nested elements */
+    box-sizing: inherit;
+}
+/* change root font size */
+/* 1 rem = 10px 10px =10/16px see below (because we set to 10px easy for calculations)*/
+html {
+    font-size: 62.5%;
+}
+/* everything inherits from body selector */
+body {
+    box-sizing: border-box;
+
+}
